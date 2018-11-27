@@ -14,13 +14,13 @@ public class Test {
         PassengerDao passengerDao = (PassengerDao) context.getBean("passengerDaoImpl");
 
         Passenger passenger = new Passenger(2,"Isabelle", "Portes");
-        // int result = passengerDao.create(passenger);
+         int result = passengerDao.create(passenger);
         // int result = passengerDao.update(passenger);
         // int result = passengerDao.delete(1);
         // List<Passenger> passengers = passengerDao.read();
-        Passenger passengers = passengerDao.read(1);
+        // Passenger passengers = passengerDao.read(1);
 
-        // System.out.println("Number of records updated : " + result);
-        System.out.println("Passenger(s) : " + passengers);
+        System.out.println("Number of records updated : " + result);
+        // System.out.println("Passenger(s) : " + passengers);
     }
 }

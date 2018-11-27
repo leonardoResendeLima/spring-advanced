@@ -13,8 +13,8 @@
     <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource"
           name="dataSource"
           p:driverClassName="com.mysql.cj.jdbc.Driver"
-          p:url="jdbc:mysql://localhost/mydb?&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"
-          p:username="admin"
+          p:url="jdbc:mysql://localhost/mydb?&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true"
+          p:username="root"
           p:password="admin"/>
 
     <bean class="org.springframework.jdbc.core.JdbcTemplate"
